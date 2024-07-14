@@ -1,0 +1,27 @@
+---
+import { FaStar } from "react-icons/fa";
+const { texto, fecha, nombre } = Astro.props;
+---
+
+<div class="bg-black/50 border border-white rounded-md p-7 w-1/3">
+    <p class="text-white">
+        {texto}
+    </p>
+    <div class="mt-16 flex items-center justify-between">
+        <div class="flex gap-5 items-center">
+            <div class="w-20 h-20 rounded-full bg-white"></div>
+            <div>
+                <p class="font-serif font-bold text-white">{nombre}</p>
+                <p class="text-gray-400 text-xs">{fecha}</p>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <FaStar size={28} className="text-amber-400" />
+            <FaStar size={28} className="text-amber-400" />
+            <FaStar size={28} className="text-amber-400" />
+            <FaStar size={28} className="text-amber-400" />
+            <FaStar size={28} className="text-amber-400" />
+        </div>
+    </div>
+</div>

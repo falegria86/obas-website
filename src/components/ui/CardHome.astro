@@ -1,0 +1,16 @@
+---
+import { FaWalking } from "react-icons/fa";
+const { titulo, texto } = Astro.props;
+---
+
+<div class="border-t-2 border-neutral-950">
+    <h3 class="mt-8 mb-5 font-bold text-neutral-950">01</h3>
+    <div class="flex items-center gap-5 text-blue-800">
+        <FaWalking size={48} />
+        <h2>{titulo}</h2>
+    </div>
+
+    <p class="mt-8">
+        {texto}
+    </p>
+</div>

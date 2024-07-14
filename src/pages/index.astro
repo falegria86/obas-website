@@ -1,0 +1,122 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Hero from "../components/Hero.astro";
+import CardHome from "../components/ui/CardHome.astro";
+import SectionTitle from "../components/ui/SectionTitle.astro";
+import CardTestimonio from "../components/ui/CardTestimonio.astro";
+import Footer from "../components/ui/Footer.astro";
+---
+
+<MainLayout>
+	<Hero />
+	<section class="pt-16 max-w-[96rem] mx-auto">
+		<SectionTitle titulo="Nuestros servicios" />
+
+		<div class="grid grid-cols-3 gap-8 mb-16">
+			<CardHome
+				titulo="Cercanía"
+				texto={`Nuestras habitaciones están estratégicamente
+		localizadas para que puedas disfrutar de tu
+		estancia y las atracciones más importantes en tu destino.`}
+			/>
+			<CardHome
+				titulo="Cercanía"
+				texto={`Nuestras habitaciones están estratégicamente
+		localizadas para que puedas disfrutar de tu
+		estancia y las atracciones más importantes en tu destino.`}
+			/>
+			<CardHome
+				titulo="Cercanía"
+				texto={`Nuestras habitaciones están estratégicamente
+		localizadas para que puedas disfrutar de tu
+		estancia y las atracciones más importantes en tu destino.`}
+			/>
+			<CardHome
+				titulo="Cercanía"
+				texto={`Nuestras habitaciones están estratégicamente
+		localizadas para que puedas disfrutar de tu
+		estancia y las atracciones más importantes en tu destino.`}
+			/>
+			<CardHome
+				titulo="Cercanía"
+				texto={`Nuestras habitaciones están estratégicamente
+		localizadas para que puedas disfrutar de tu
+		estancia y las atracciones más importantes en tu destino.`}
+			/>
+			<CardHome
+				titulo="Cercanía"
+				texto={`Nuestras habitaciones están estratégicamente
+		localizadas para que puedas disfrutar de tu
+		estancia y las atracciones más importantes en tu destino.`}
+			/>
+		</div>
+	</section>
+
+	<SectionTitle titulo="Algo para todos los gustos" />
+	<section class="h-96 w-full flex">
+		<div
+			class="w-full bg-[url('/comodidad.jpg')] bg-cover bg-center relative group"
+		>
+			<div
+				class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity"
+			>
+			</div>
+			<div
+				class="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity"
+			>
+				<p class="text-4xl uppercase font-serif font-bold">Comodidad</p>
+			</div>
+		</div>
+		<div
+			class="w-full bg-[url('/ciudad.jpg')] bg-cover bg-center relative group"
+		>
+			<div
+				class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity"
+			>
+			</div>
+			<div
+				class="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity"
+			>
+				<p class="text-4xl uppercase font-serif font-bold">Ciudad</p>
+			</div>
+		</div>
+		<div
+			class="w-full bg-[url('/mako-hero.webp')] bg-cover bg-center relative group"
+		>
+			<div
+				class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity"
+			>
+			</div>
+			<div
+				class="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity"
+			>
+				<p class="text-4xl uppercase font-serif font-bold">Playa</p>
+			</div>
+		</div>
+	</section>
+
+	<section
+		class="py-16 px-8 bg-[url('/mako-overlay.png')] bg-cover bg-center"
+	>
+		<SectionTitle titulo="Clientes satisfechos" className="text-white" />
+		<div class="flex gap-8">
+			<CardTestimonio
+				texto={`El lugar es el mismo que se publica en las fotos, todo muy limpio y ordenado y muy agradable la estancia, recomendado`}
+				nombre="Christopher"
+				fecha="Julio de 2022"
+			/>
+			<CardTestimonio
+				texto={`Las instalaciones cuentan con todo lo necesario, son nuevas, muy comodo y los servicios son excelentes.`}
+				nombre="Ruben"
+				fecha="Octubre de 2022"
+			/>
+			<CardTestimonio
+				texto={`Es un excelente lugar para disfrutar de la ciudad, situado cerca de locales comerciales, limpio, con todas las comodidades y atencioned excepcionales, perfecto.`}
+				nombre="Marimar"
+				fecha="Noviembre de 2022"
+			/>
+		</div>
+	</section>
+
+	<Footer />
+</MainLayout>

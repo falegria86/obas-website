@@ -1,0 +1,49 @@
+---
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import Button from "./Button.astro";
+---
+
+<footer class="p-16 bg-neutral-950">
+    <div class="grid grid-cols-5 gap-x-0">
+        <div>
+            <h5 class="text-gray-400 uppercase font-normal mb-5">
+                Propiedades
+            </h5>
+            <h5 class="text-white mb-5">Mako 54</h5>
+            <h5 class="text-white">Revu 519</h5>
+            <h5 class="text-white mt-32">© 2024</h5>
+        </div>
+        <div>
+            <h5 class="text-gray-400 uppercase font-normal mb-5">Empresa</h5>
+            <h5 class="text-white mb-5">Acerca de</h5>
+            <h5 class="text-white">Misión</h5>
+            <h5 class="text-white">Visión</h5>
+        </div>
+        <div>
+            <h5 class="text-gray-400 uppercase font-normal mb-5">
+                Redes sociales
+            </h5>
+            <div class="flex gap-5">
+                <FaFacebook size={32} className="text-white" />
+                <FaInstagram size={32} className="text-white" />
+            </div>
+        </div>
+        <div class="w-52">
+            <img src="/obas-logo.svg" alt="Logo Obas" />
+        </div>
+        <div>
+            <h5 class="text-gray-400 uppercase font-normal mb-5">
+                Suscríbete a la lista de correos
+            </h5>
+            <div
+                class="bg-white flex items-center justify-between rounded-full p-2"
+            >
+                <input
+                    type="text"
+                    class="w-full ml-4 mr-2 focus:outline-none"
+                />
+                <Button variant="contained" texto="Suscribirse" />
+            </div>
+        </div>
+    </div>
+</footer>
