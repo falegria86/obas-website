@@ -1,13 +1,15 @@
-import { IoIosArrowForward } from "react-icons/io";
-import { IoIosArrowBack } from "react-icons/io";
+import { useState } from "react";
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
 import { Navigation, Autoplay } from "swiper/modules";
+import { motion } from "framer-motion";
 
 const HeroSlider = () => {
+    const [activeSlide, setActiveSlide] = useState(0);
+
     const slides = [
         {
             bgImage: '/mako-hero.webp',
@@ -33,32 +35,65 @@ const HeroSlider = () => {
                 autoplay={{ delay: 5000 }}
                 loop={true}
                 modules={[Navigation, Autoplay]}
+                onSlideChange={(swiper) => setActiveSlide(swiper.activeIndex)}
             >
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
                         <div className="h-fit xl:h-full flex flex-col xl:flex-row-reverse gap-8 xl:gap-16">
                             <div className="w-full xl:w-1/2 flex flex-col justify-between">
-                                <img src={slide.logo} alt="Obas Logo" className="w-28" />
-                                <img src={slide.mainLogo} alt="Main Logo" className="h-72 xl:h-1/2 mx-auto" />
+                                <motion.img
+                                    key={`${activeSlide}-logo`}
+                                    src={slide.logo}
+                                    alt="Obas Logo"
+                                    className="w-28"
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 1 }}
+                                />
+                                <motion.img
+                                    key={`${activeSlide}-mainLogo`}
+                                    src={slide.mainLogo}
+                                    alt="Main Logo"
+                                    className="h-72 xl:h-1/2 mx-auto"
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 1 }}
+                                />
                                 <div className="w-full flex flex-col items-center xl:flex-row justify-between">
-                                    <div className="w-full xl:w-1/3 flex flex-col items-center xl:items-start">
+                                    <motion.div
+                                        key={`${activeSlide}-description`}
+                                        className="w-full xl:w-1/3 flex flex-col items-center xl:items-start"
+                                        initial={{ opacity: 0, y: 20 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 1, delay: 0.5 }}
+                                    >
                                         <p className="text-white mb-5 xl:text-left text-center">
                                             {slide.description}
                                         </p>
-                                        <button className='border border-white rounded-full py-3 px-8 text-white hover:text-neutral-900 hover:bg-white transition-all'>
+                                        <button
+                                            className='border border-white rounded-full py-3 px-8 text-white hover:text-neutral-900 hover:bg-white transition-all'
+                                        >
                                             Conoce más
                                         </button>
-                                    </div>
-                                    <div
+                                    </motion.div>
+                                    <motion.div
+                                        key={`${activeSlide}-innerBgImage`}
                                         className="xl:block hidden w-1/3 h-96 rounded-3xl bg-center bg-cover"
                                         style={{ backgroundImage: `url(${slide.innerBgImage})` }}
-                                    ></div>
+                                        initial={{ opacity: 0, y: 20 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 1, delay: 1.5 }}
+                                    ></motion.div>
                                 </div>
                             </div>
-                            <div
+                            <motion.div
+                                key={`${activeSlide}-bgImage`}
                                 className="w-full h-96 xl:h-full xl:w-1/2 rounded-3xl bg-center bg-cover"
                                 style={{ backgroundImage: `url(${slide.bgImage})` }}
-                            ></div>
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1 }}
+                            ></motion.div>
                         </div>
                     </SwiperSlide>
                 ))}
@@ -72,4 +107,5 @@ const HeroSlider = () => {
         </>
     )
 }
-export default HeroSlider
+
+export default HeroSlider;
