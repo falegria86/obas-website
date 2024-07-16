@@ -7,7 +7,7 @@ const { texto, fecha, nombre } = Astro.props;
     <p class="text-white">
         {texto}
     </p>
-    <div class="mt-16 flex items-center justify-between">
+    <div class="mt-16 block sm:flex items-center justify-between">
         <div class="flex gap-5 items-center">
             <div class="w-20 h-20 rounded-full bg-white"></div>
             <div>
@@ -16,7 +16,7 @@ const { texto, fecha, nombre } = Astro.props;
             </div>
         </div>
 
-        <div class="flex gap-2">
+        <div class="flex gap-2 mt-4 sm:mt-0">
             <FaStar size={28} className="text-amber-400" />
             <FaStar size={28} className="text-amber-400" />
             <FaStar size={28} className="text-amber-400" />
