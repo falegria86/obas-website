@@ -36,17 +36,13 @@ const HeroSlider = () => {
             >
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
-                        <div className="w-full h-full flex gap-16">
-                            <div
-                                className="w-1/2 rounded-3xl bg-cover"
-                                style={{ backgroundImage: `url(${slide.bgImage})` }}
-                            ></div>
-                            <div className="w-1/2 flex flex-col justify-between">
+                        <div className="h-fit xl:h-full flex flex-col xl:flex-row-reverse gap-8 xl:gap-16">
+                            <div className="w-full xl:w-1/2 flex flex-col justify-between">
                                 <img src={slide.logo} alt="Obas Logo" className="w-28" />
-                                <img src={slide.mainLogo} alt="Main Logo" className="h-1/2 mx-auto" />
-                                <div className="w-full flex justify-between">
-                                    <div className="w-1/3">
-                                        <p className="text-white mb-5">
+                                <img src={slide.mainLogo} alt="Main Logo" className="h-72 xl:h-1/2 mx-auto" />
+                                <div className="w-full flex flex-col items-center xl:flex-row justify-between">
+                                    <div className="w-full xl:w-1/3 flex flex-col items-center xl:items-start">
+                                        <p className="text-white mb-5 xl:text-left text-center">
                                             {slide.description}
                                         </p>
                                         <button className='border border-white rounded-full py-3 px-8 text-white hover:text-neutral-900 hover:bg-white transition-all'>
@@ -54,11 +50,15 @@ const HeroSlider = () => {
                                         </button>
                                     </div>
                                     <div
-                                        className="bg-green-500 w-1/3 h-96 max-h-96 rounded-3xl bg-cover"
+                                        className="xl:block hidden w-1/3 h-96 rounded-3xl bg-center bg-cover"
                                         style={{ backgroundImage: `url(${slide.innerBgImage})` }}
                                     ></div>
                                 </div>
                             </div>
+                            <div
+                                className="w-full h-96 xl:h-full xl:w-1/2 rounded-3xl bg-center bg-cover"
+                                style={{ backgroundImage: `url(${slide.bgImage})` }}
+                            ></div>
                         </div>
                     </SwiperSlide>
                 ))}

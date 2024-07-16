@@ -4,7 +4,7 @@ import Button from "./Button.astro";
 ---
 
 <footer class="p-16 bg-neutral-950">
-    <div class="grid grid-cols-5 gap-x-0">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5 text-center md:text-left">
         <div>
             <h5 class="text-gray-400 uppercase font-normal mb-5">
                 Propiedades
@@ -19,7 +19,7 @@ import Button from "./Button.astro";
             <h5 class="text-white">Misión</h5>
             <h5 class="text-white">Visión</h5>
         </div>
-        <div>
+        <div class="mx-auto md:mx-0">
             <h5 class="text-gray-400 uppercase font-normal mb-5">
                 Redes sociales
             </h5>
@@ -28,7 +28,7 @@ import Button from "./Button.astro";
                 <FaInstagram size={32} className="text-white" />
             </div>
         </div>
-        <div class="w-52">
+        <div class="w-52 mx-auto md:mx-0">
             <img src="/obas-logo.svg" alt="Logo Obas" />
         </div>
         <div>

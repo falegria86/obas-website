@@ -5,14 +5,18 @@ import CardHome from "../components/ui/CardHome.astro";
 import SectionTitle from "../components/ui/SectionTitle.astro";
 import CardTestimonio from "../components/ui/CardTestimonio.astro";
 import Footer from "../components/ui/Footer.astro";
+import HeroSlider from "../components/HeroSlider";
 ---
 
 <MainLayout>
-	<Hero />
-	<section class="pt-16 max-w-[96rem] mx-auto">
+	<main class="bg-neutral-900 w-full max-h-screen h-full p-4 flex gap-16">
+		<HeroSlider client:load />
+	</main>
+
+	<section class="pt-16 max-w-[96rem] mx-auto px-8 2xl:px-0">
 		<SectionTitle titulo="Nuestros servicios" />
 
-		<div class="grid grid-cols-3 gap-8 mb-16">
+		<div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
 			<CardHome
 				titulo="Cercanía"
 				texto={`Nuestras habitaciones están estratégicamente
@@ -53,9 +57,9 @@ import Footer from "../components/ui/Footer.astro";
 	</section>
 
 	<SectionTitle titulo="Algo para todos los gustos" />
-	<section class="h-96 w-full flex">
+	<section class="lg:h-96 h-72 w-full flex">
 		<div
-			class="w-full bg-[url('/comodidad.jpg')] bg-cover bg-center relative group"
+			class="w-full h-full bg-[url('/comodidad.jpg')] bg-cover bg-center relative group"
 		>
 			<div
 				class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity"
@@ -68,7 +72,7 @@ import Footer from "../components/ui/Footer.astro";
 			</div>
 		</div>
 		<div
-			class="w-full bg-[url('/ciudad.jpg')] bg-cover bg-center relative group"
+			class="w-full h-full bg-[url('/ciudad.jpg')] bg-cover bg-center relative group"
 		>
 			<div
 				class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity"
@@ -81,7 +85,7 @@ import Footer from "../components/ui/Footer.astro";
 			</div>
 		</div>
 		<div
-			class="w-full bg-[url('/mako-hero.webp')] bg-cover bg-center relative group"
+			class="w-full h-full bg-[url('/mako-hero.webp')] bg-cover bg-center relative group"
 		>
 			<div
 				class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity"
@@ -99,7 +103,7 @@ import Footer from "../components/ui/Footer.astro";
 		class="py-16 px-8 bg-[url('/mako-overlay.png')] bg-cover bg-center"
 	>
 		<SectionTitle titulo="Clientes satisfechos" className="text-white" />
-		<div class="flex gap-8">
+		<div class="grid grid-cols-1 xl:grid-cols-3 gap-8">
 			<CardTestimonio
 				texto={`El lugar es el mismo que se publica en las fotos, todo muy limpio y ordenado y muy agradable la estancia, recomendado`}
 				nombre="Christopher"

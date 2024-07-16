@@ -5,7 +5,7 @@ const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     return (
-        <nav className="fixed right-8 top-8 z-20" onClick={() => setShowMenu(prevState => !prevState)}>
+        <nav className="fixed right-4 top-4 lg:right-8 lg:top-8 z-20" onClick={() => setShowMenu(prevState => !prevState)}>
             <div className="bg-white/25 rounded-full py-2 px-8 cursor-pointer hover:bg-white text-white hover:text-neutral-950 transition-all">
                 <FiMenu size={28} />
             </div>
