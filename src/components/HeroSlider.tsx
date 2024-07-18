@@ -12,18 +12,18 @@ const HeroSlider = () => {
 
     const slides = [
         {
-            bgImage: '/mako-hero.webp',
+            bgImage: '/mako54/mako-hero.webp',
             logo: '/obas-logo-white.svg',
-            mainLogo: '/mako-logo-white.svg',
+            mainLogo: '/mako54/mako-logo-white.svg',
             description: 'El lugar ideal para pasar tus días de descanso en relajación y comodidad total. Disfruta de la mejor vista en Puerto Vallarta.',
-            innerBgImage: '/mako-hero-2.webp',
+            innerBgImage: '/mako54/mako-hero-2.webp',
         },
         {
-            bgImage: '/revu-01.jpg',
+            bgImage: '/revu519/revu-01.jpg',
             logo: '/obas-logo-white.svg',
-            mainLogo: '/revu-logo-white.svg',
+            mainLogo: '/revu519/revu-logo-white.svg',
             description: 'Departamentos tipo loft amueblados y equipados para tus necesidades. Con una excelente ubicación en la ciudad de Tepic, Nayarit.',
-            innerBgImage: '/revu-02.jpg',
+            innerBgImage: '/revu519/revu-02.jpg',
         }
     ];
 

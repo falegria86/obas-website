@@ -1,0 +1,77 @@
+---
+import SectionTitle from "../components/ui/SectionTitle.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import ImagesSlider from "../components/ImageSlider";
+---
+
+<MainLayout title="Obas - ¿Quiénes somos?">
+    <section class="max-w-[96rem] mx-auto mb-16">
+        <div class="flex items-center mx-auto">
+            <img src="/obas-logo.svg" alt="Logo Obas" class="w-40" />
+            <SectionTitle titulo="¿Quiénes somos?" className="mb-0 mx-auto" />
+        </div>
+
+        <div class="mt-16">
+            <div class="flex w-full">
+                <div>
+                    <img
+                        src="/quienes-01.png"
+                        alt="Img quienes somos 01"
+                        class="w-80"
+                    />
+                    <img
+                        src="/quienes-02.png"
+                        alt="Img quienes somos 02"
+                        class="w-80 -mt-48 ml-40"
+                    />
+                </div>
+                <div class="w-[2px] mx-auto bg-neutral-950"></div>
+                <div class="w-1/2">
+                    <div>
+                        <h2
+                            class="uppercase font-serif font-bold text-center mb-8"
+                        >
+                            Nuestra misión
+                        </h2>
+                        <p>
+                            Proporcionar una opción integral, a personas y
+                            empresas, que permita solucionar sus necesidades
+                            relacionadas con el alojamiento.
+                            <br /><br />
+                            Aportándoles una mayor rentabilidad basada en la responsabilidad
+                            y la transparencia.
+                        </p>
+                    </div>
+                    <div>
+                        <h2
+                            class="uppercase font-serif font-bold text-center mb-8 mt-16"
+                        >
+                            Nuestra visión
+                        </h2>
+                        <p>
+                            Convertirnos en la empresa de referencia del sector
+                            inmobiliario en Nayarit, con objeto de que las
+                            personas que busquen un lugar para alojarse piensen
+                            en nosotros como primera opción de alojamiento en el
+                            momento de visitar Nayarit.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-5 mt-16">
+                        <img
+                            src="/quienes-03.png"
+                            alt="Img quienes somos 03"
+                            class="w-1/2"
+                        />
+                        <img
+                            src="/quienes-04.png"
+                            alt="Img quienes somos 04"
+                            class="w-1/2"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <ImagesSlider client:load/>
+</MainLayout>
