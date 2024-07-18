@@ -4,7 +4,9 @@ import Button from "./Button.astro";
 ---
 
 <footer class="p-16 bg-neutral-950">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5 text-center md:text-left">
+    <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5 text-center md:text-left"
+    >
         <div>
             <h5 class="text-gray-400 uppercase font-normal mb-5">
                 Propiedades
@@ -24,14 +26,24 @@ import Button from "./Button.astro";
                 Redes sociales
             </h5>
             <div class="flex gap-5">
-                <FaFacebook size={32} className="text-white" />
-                <FaInstagram size={32} className="text-white" />
+                <a
+                    href="https://www.facebook.com/obasdesign?mibextid=LQQJ4d"
+                    target="_blank"
+                >
+                    <FaFacebook size={32} className="text-white" />
+                </a>
+                <a
+                    href="https://www.instagram.com/obasdesign?igshid=MzRlODBiNWFlZA%3D%3D"
+                    target="_blank"
+                >
+                    <FaInstagram size={32} className="text-white" />
+                </a>
             </div>
         </div>
         <div class="w-52 mx-auto md:mx-0">
             <img src="/obas-logo.svg" alt="Logo Obas" />
         </div>
-        <div>
+        <div class="2xl:col-span-1 col-span-2">
             <h5 class="text-gray-400 uppercase font-normal mb-5">
                 Suscríbete a la lista de correos
             </h5>

@@ -5,35 +5,46 @@ const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     return (
-        <nav className="fixed right-4 top-4 lg:right-8 lg:top-8 z-20" onClick={() => setShowMenu(prevState => !prevState)}>
-            <div className="bg-black/25 rounded-full py-2 px-8 cursor-pointer hover:bg-white text-white hover:text-neutral-950 transition-all">
-                <FiMenu size={28} />
-            </div>
-
+        <>
             {showMenu && (
-                <ul className='bg-white absolute right-0 top-12 rounded-md w-48 p-4 space-y-4'>
-                    <li className='text-gray-500 hover:text-neutral-950 cursor-pointer'>
-                        <a href="/">Inicio</a>
-                    </li>
-                    <li className='text-gray-500 hover:text-neutral-950 cursor-pointer'>
-                        <a href="/quienes-somos">¿Quiénes somos?</a>
-                    </li>
-                    <li className='text-gray-500 hover:text-neutral-950 cursor-pointer'>
-                        <a href="#">Misión</a>
-                    </li>
-                    <li className='text-gray-500 hover:text-neutral-950 cursor-pointer'>
-                        <a href="#">Visión</a>
-                    </li>
-                    <li className='text-gray-500 hover:text-neutral-950 cursor-pointer'>
-                        <a href="#">Mako 54</a>
-                    </li>
-                    <li className='text-gray-500 hover:text-neutral-950 cursor-pointer'>
-                        <a href="#">Revu 519</a>
-                    </li>
-                </ul>
+                <div
+                    className="fixed bg-transparent inset-0 z-10"
+                    onClick={() => setShowMenu(false)}
+                />
             )}
-
-        </nav >
+            <nav
+                className="fixed right-4 top-4 lg:right-8 lg:top-8 z-20"
+                onClick={() => setShowMenu(prevState => !prevState)}
+            >
+                <div className="bg-black/25 rounded-full py-2 px-8 cursor-pointer hover:bg-white text-white hover:text-neutral-950 transition-all">
+                    <FiMenu size={28} />
+                </div>
+                {showMenu && (
+                    <ul className="bg-white absolute right-0 top-12 rounded-md w-48">
+                        <a href="/">
+                            <li className="text-gray-500 hover:text-neutral-950 cursor-pointer hover:bg-neutral-100 hover:font-semibold rounded-t-md px-4 py-2">
+                                Inicio
+                            </li>
+                        </a>
+                        <a href="/quienes-somos">
+                            <li className="text-gray-500 hover:text-neutral-950 cursor-pointer hover:bg-neutral-100 hover:font-semibold px-4 py-2">
+                                ¿Quiénes somos?
+                            </li>
+                        </a>
+                        <div className="mt-4">
+                            <h6 className="ml-4 text-gray-400">Propiedades</h6>
+                            <div className="h-[1px] mt-1 mb-2 bg-gray-200"></div>
+                            <li className="text-gray-500 hover:text-neutral-950 cursor-pointer hover:bg-neutral-100 hover:font-semibold px-4 py-2">
+                                <a href="#">Mako 54</a>
+                            </li>
+                            <li className="text-gray-500 hover:text-neutral-950 cursor-pointer hover:bg-neutral-100 hover:font-semibold rounded-b-md px-4 py-2">
+                                <a href="#">Revu 519</a>
+                            </li>
+                        </div>
+                    </ul>
+                )}
+            </nav>
+        </>
     );
 };
 
