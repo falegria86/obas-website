@@ -101,7 +101,26 @@ const ImageSlider = () => {
     return (
         <div className="my-16">
             <Swiper
-                slidesPerView={9}
+                breakpoints={{
+                    240: {
+                        slidesPerView: 2,
+                    },
+                    640: {
+                        slidesPerView: 4,
+                    },
+                    768: {
+                        slidesPerView: 4,
+                    },
+                    1024: {
+                        slidesPerView: 6,
+                    },
+                    1280: {
+                        slidesPerView: 8,
+                    },
+                    1536: {
+                        slidesPerView: 10,
+                    },
+                }}
                 autoplay={{
                     delay: 0,
                     disableOnInteraction: false,
