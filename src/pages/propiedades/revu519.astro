@@ -1,0 +1,225 @@
+---
+import { TbAirConditioning } from "react-icons/tb";
+import { FaParking } from "react-icons/fa";
+import { FaKitchenSet } from "react-icons/fa6";
+import { PiTelevisionSimpleFill } from "react-icons/pi";
+import { FaWifi } from "react-icons/fa";
+import Button from "../../components/ui/Button.astro";
+import SectionTitle from "../../components/ui/SectionTitle.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+import ImageModalSlider from "../../components/ImageModalSlider";
+import AnimatedWrapper from "../../components/AnimatedWrapper";
+
+const slides = [
+    "/revu519/revu-01.jpg",
+    "/revu519/revu-02.jpg",
+    "/revu519/revu-03.jpg",
+    "/revu519/revu-04.jpg",
+    "/revu519/revu-05.jpg",
+    "/revu519/revu-06.jpg",
+    "/revu519/revu-07.jpg",
+    "/revu519/revu-08.jpg",
+    "/revu519/revu-09.jpg",
+    "/revu519/revu-10.jpg",
+    "/revu519/revu-11.jpg",
+    "/revu519/revu-12.jpg",
+    "/revu519/revu-13.jpg",
+    "/revu519/revu-14.jpg",
+    "/revu519/revu-15.jpg",
+    "/revu519/revu-16.jpg",
+    "/revu519/revu-17.jpg",
+    "/revu519/revu-18.jpg",
+    "/revu519/revu-19.jpg",
+];
+---
+
+<MainLayout title="REVU 519">
+    <section class="bg-neutral-900">
+        <AnimatedWrapper client:load>
+            <div class="max-w-7xl mx-auto py-8">
+                <div class="flex gap-16">
+                    <div class="w-fit">
+                        <img
+                            src="/obas-logo-white.svg"
+                            alt="Obas logo"
+                            class="w-20 mb-16"
+                        />
+                        <img
+                            src="/revu519/logo-revu-green.svg"
+                            alt="Obas logo"
+                            class="w-[500px]"
+                        />
+                        <div class="mt-16 flex justify-end">
+                            <Button texto="RESERVAR AHORA" />
+                        </div>
+                    </div>
+                    <div class="w-full flex gap-x-5">
+                        <div
+                            class="aspect-auto bg-[url('/revu519/revu-17.jpg')] bg-cover bg-center w-1/2 rounded-lg"
+                        >
+                        </div>
+                        <div class="w-1/2 flex flex-col justify-between">
+                            <div
+                                class="aspect-video bg-[url('/revu519/revu-04.jpg')] bg-cover bg-center rounded-lg mb-5"
+                            >
+                            </div>
+                            <div
+                                class="aspect-video bg-[url('/revu519/revu-08.jpg')] bg-cover bg-center rounded-lg"
+                            >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </AnimatedWrapper>
+    </section>
+
+    <AnimatedWrapper client:load>
+        <section class="max-w-7xl mx-auto my-16">
+            <div class="flex gap-8">
+                <div class="w-1/2">
+                    <SectionTitle titulo="Hermosa propiedad" />
+
+                    <p>
+                        <span class="font-bold">REVU 519</span>, Ubicado en
+                        Calle Revolución Social #519, en la colonia Menchaca de
+                        Tepic, Nayarit, se encuentra este inmueble tipo loft
+                        equipado con cocina integral y baño completo.
+                        <br /><br />
+                        Cuenta con 9 departamentos para 2 personas y 1 departamento
+                        equipado para hasta 5 personas.
+                    </p>
+                </div>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.4707167875767!2d-104.8915511876782!3d21.489274780195426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842737c0a7ad1683%3A0xc976ddf48553c844!2sREVU%20519!5e0!3m2!1ses!2smx!4v1722385288575!5m2!1ses!2smx"
+                    height="350"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="rounded-lg w-1/2"
+                >
+                </iframe>
+            </div>
+        </section>
+    </AnimatedWrapper>
+
+    <AnimatedWrapper client:load>
+        <section class="max-w-7xl mx-auto mb-16 flex gap-5">
+            <div class="w-7/12">
+                <SectionTitle titulo="Servicios" />
+                <div class="mt-8 grid grid-cols-2 gap-x-16 gap-y-8 mb-8">
+                    <div class="flex gap-5 items-center">
+                        <div
+                            class="border border-obas flex items-center p-4 rounded-full text-obas"
+                        >
+                            <TbAirConditioning size={28} />
+                        </div>
+                        <h4 class="font-bold">Aire acondicionado</h4>
+                    </div>
+                    <div class="flex gap-5 items-center">
+                        <div
+                            class="border border-obas flex items-center p-4 rounded-full text-obas"
+                        >
+                            <FaParking size={28} />
+                        </div>
+                        <h4 class="font-bold">Estacionamiento</h4>
+                    </div>
+                    <div class="flex gap-5 items-center">
+                        <div
+                            class="border border-obas flex items-center p-4 rounded-full text-obas"
+                        >
+                            <FaWifi size={28} />
+                        </div>
+                        <h4 class="font-bold">Wi-fi</h4>
+                    </div>
+                    <div class="flex gap-5 items-center">
+                        <div
+                            class="border border-obas flex items-center p-4 rounded-full text-obas"
+                        >
+                            <FaKitchenSet size={28} />
+                        </div>
+                        <h4 class="font-bold">Cocina integral</h4>
+                    </div>
+                    <div class="flex gap-5 items-center">
+                        <div
+                            class="border border-obas flex items-center p-4 rounded-full text-obas"
+                        >
+                            <PiTelevisionSimpleFill size={28} />
+                        </div>
+                        <h4 class="font-bold">Televisión</h4>
+                    </div>
+                </div>
+                <Button variant="obas" texto="RESERVAR AHORA" />
+            </div>
+            <div class="w-5/12 flex gap-5">
+                <div
+                    class="aspect-auto bg-[url('/revu519/revu-14.jpg')] bg-cover bg-center w-full rounded-lg"
+                >
+                </div>
+                <div
+                    class="aspect-auto bg-[url('/revu519/revu-18.jpg')] bg-cover bg-center w-full rounded-lg"
+                >
+                </div>
+            </div>
+        </section>
+    </AnimatedWrapper>
+
+    <AnimatedWrapper client:load>
+        <section class="max-w-7xl mx-auto mb-16 flex justify-between">
+            <div class="w-2/5 space-y-5">
+                <h2 class="font-bold font-serif uppercase text-neutral-950">
+                    Increíbles vistas
+                </h2>
+                <p>
+                    Disfruta de la increíble vista que ofrecen nuestros
+                    departamentos con balcón.
+                </p>
+                <div
+                    class="aspect-video bg-[url('/revu519/revu-15.jpg')] bg-cover bg-center w-full rounded-lg"
+                >
+                </div>
+                <div
+                    class="aspect-video bg-[url('/revu519/revu-03.jpg')] bg-cover bg-center w-full rounded-lg"
+                >
+                </div>
+            </div>
+
+            <div class="border border-neutral-950"></div>
+
+            <div class="w-2/5 space-y-5">
+                <h2 class="font-bold font-serif uppercase text-neutral-950">
+                    Modernos interiores
+                </h2>
+                <p>
+                    Lofts modernos, acondicionados y muy acogedores, ideales
+                    hasta para 2 personas.
+                </p>
+                <div
+                    class="aspect-video bg-[url('/revu519/revu-12.jpg')] bg-cover bg-center w-full rounded-lg"
+                >
+                </div>
+                <div
+                    class="aspect-video bg-[url('/revu519/revu-06.jpg')] bg-cover bg-center w-full rounded-lg"
+                >
+                </div>
+            </div>
+        </section>
+    </AnimatedWrapper>
+
+    <AnimatedWrapper client:load>
+        <section class="max-w-7xl mx-auto mb-16">
+            <h2
+                class="font-bold font-serif uppercase text-center text-neutral-950"
+            >
+                Una imagen dice más que mil palabras
+            </h2>
+
+            <ImageModalSlider client:load slides={slides} />
+            <div class="flex justify-center">
+                <Button variant="obas" texto="Reservar ahora" />
+            </div>
+        </section>
+    </AnimatedWrapper>
+</MainLayout>

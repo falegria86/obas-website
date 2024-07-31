@@ -7,94 +7,118 @@ import "swiper/css/pagination";
 const ImageSlider = () => {
     const slides = [
         {
-            bgImage: '/ciudad.jpg'
+            bgImage: '/mako54/mako-01.jpg'
         },
         {
-            bgImage: '/comodidad.jpg'
+            bgImage: '/mako54/mako-02.jpg'
         },
         {
-            bgImage: '/mako54/mako-hero.webp'
+            bgImage: '/mako54/mako-03.jpg'
         },
         {
-            bgImage: '/ciudad.jpg'
+            bgImage: '/mako54/mako-04.jpg'
         },
         {
-            bgImage: '/comodidad.jpg'
+            bgImage: '/mako54/mako-05.jpg'
         },
         {
-            bgImage: '/mako54/mako-hero.webp'
+            bgImage: '/mako54/mako-06.jpg'
         },
         {
-            bgImage: '/ciudad.jpg'
+            bgImage: '/mako54/mako-07.jpg'
         },
         {
-            bgImage: '/comodidad.jpg'
+            bgImage: '/mako54/mako-08.jpg'
         },
         {
-            bgImage: '/mako54/mako-hero.webp'
+            bgImage: '/mako54/mako-09.jpg'
         },
         {
-            bgImage: '/ciudad.jpg'
+            bgImage: '/mako54/mako-10.jpg'
         },
         {
-            bgImage: '/comodidad.jpg'
+            bgImage: '/mako54/mako-11.jpg'
         },
         {
-            bgImage: '/mako54/mako-hero.webp'
+            bgImage: '/mako54/mako-12.jpg'
         },
         {
-            bgImage: '/ciudad.jpg'
+            bgImage: '/mako54/mako-13.jpg'
         },
         {
-            bgImage: '/comodidad.jpg'
+            bgImage: '/mako54/mako-14.jpg'
         },
         {
-            bgImage: '/mako54/mako-hero.webp'
+            bgImage: '/mako54/mako-15.jpg'
         },
         {
-            bgImage: '/ciudad.jpg'
+            bgImage: '/mako54/mako-16.jpg'
         },
         {
-            bgImage: '/comodidad.jpg'
+            bgImage: '/mako54/mako-17.jpg'
         },
         {
-            bgImage: '/mako54/mako-hero.webp'
+            bgImage: '/mako54/mako-18.jpg'
         },
         {
-            bgImage: '/ciudad.jpg'
+            bgImage: '/mako54/mako-19.jpg'
         },
         {
-            bgImage: '/comodidad.jpg'
+            bgImage: '/revu519/revu-01.jpg'
         },
         {
-            bgImage: '/mako54/mako-hero.webp'
+            bgImage: '/revu519/revu-02.jpg'
         },
         {
-            bgImage: '/ciudad.jpg'
+            bgImage: '/revu519/revu-03.jpg'
         },
         {
-            bgImage: '/comodidad.jpg'
+            bgImage: '/revu519/revu-04.jpg'
         },
         {
-            bgImage: '/mako54/mako-hero.webp'
+            bgImage: '/revu519/revu-05.jpg'
         },
         {
-            bgImage: '/ciudad.jpg'
+            bgImage: '/revu519/revu-06.jpg'
         },
         {
-            bgImage: '/comodidad.jpg'
+            bgImage: '/revu519/revu-07.jpg'
         },
         {
-            bgImage: '/mako54/mako-hero.webp'
+            bgImage: '/revu519/revu-08.jpg'
         },
         {
-            bgImage: '/ciudad.jpg'
+            bgImage: '/revu519/revu-09.jpg'
         },
         {
-            bgImage: '/comodidad.jpg'
+            bgImage: '/revu519/revu-10.jpg'
         },
         {
-            bgImage: '/mako54/mako-hero.webp'
+            bgImage: '/revu519/revu-11.jpg'
+        },
+        {
+            bgImage: '/revu519/revu-12.jpg'
+        },
+        {
+            bgImage: '/revu519/revu-13.jpg'
+        },
+        {
+            bgImage: '/revu519/revu-14.jpg'
+        },
+        {
+            bgImage: '/revu519/revu-15.jpg'
+        },
+        {
+            bgImage: '/revu519/revu-16.jpg'
+        },
+        {
+            bgImage: '/revu519/revu-17.jpg'
+        },
+        {
+            bgImage: '/revu519/revu-18.jpg'
+        },
+        {
+            bgImage: '/revu519/revu-19.jpg'
         },
     ];
 

@@ -3,9 +3,10 @@ const { variant = "outline", texto } = Astro.props;
 
 const variants: any = {
     outline:
-        "border border-white rounded-full py-3 px-8 text-white hover:text-neutral-900 hover:bg-white transition-all",
+        "uppercase border border-white rounded-full py-3 px-8 text-white hover:text-neutral-900 hover:bg-white transition-all",
     contained:
-        "rounded-full py-3 px-8 text-white bg-amber-600 hover:bg-amber-800 transition-all",
+        "uppercase rounded-full py-3 px-8 text-white bg-amber-600 hover:bg-amber-800 transition-all",
+    obas: "uppercase bg-obas rounded-full py-3 px-8 text-white hover:text-white/80 hover:bg-obas/80 transition-all",
 };
 
 const buttonClasses = variants[variant];

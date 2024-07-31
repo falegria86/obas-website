@@ -12,18 +12,20 @@ const HeroSlider = () => {
 
     const slides = [
         {
-            bgImage: '/mako54/mako-hero.webp',
+            bgImage: '/mako54/mako-02.jpg',
             logo: '/obas-logo-white.svg',
             mainLogo: '/mako54/mako-logo-white.svg',
             description: 'El lugar ideal para pasar tus días de descanso en relajación y comodidad total. Disfruta de la mejor vista en Puerto Vallarta.',
-            innerBgImage: '/mako54/mako-hero-2.webp',
+            innerBgImage: '/mako54/mako-04.jpg',
+            url: '/propiedades/mako54'
         },
         {
-            bgImage: '/revu519/revu-01.jpg',
+            bgImage: '/revu519/revu-03.jpg',
             logo: '/obas-logo-white.svg',
             mainLogo: '/revu519/revu-logo-white.svg',
             description: 'Departamentos tipo loft amueblados y equipados para tus necesidades. Con una excelente ubicación en la ciudad de Tepic, Nayarit.',
-            innerBgImage: '/revu519/revu-02.jpg',
+            innerBgImage: '/revu519/revu-15.jpg',
+            url: '/propiedades/revu519'
         }
     ];
 
@@ -70,11 +72,13 @@ const HeroSlider = () => {
                                         <p className="text-white mb-5 xl:text-left text-center">
                                             {slide.description}
                                         </p>
-                                        <button
-                                            className='border border-white rounded-full py-3 px-8 text-white hover:text-neutral-900 hover:bg-white transition-all'
-                                        >
-                                            Conoce más
-                                        </button>
+                                        <a href={slide.url}>
+                                            <button
+                                                className='uppercase border border-white rounded-full py-3 px-8 text-white hover:text-neutral-900 hover:bg-white transition-all'
+                                            >
+                                                Conoce más
+                                            </button>
+                                        </a>
                                     </motion.div>
                                     <motion.div
                                         key={`${activeSlide}-innerBgImage`}

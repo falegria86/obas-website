@@ -3,7 +3,6 @@ import MainLayout from "../layouts/MainLayout.astro";
 import CardHome from "../components/ui/CardHome.astro";
 import SectionTitle from "../components/ui/SectionTitle.astro";
 import CardTestimonio from "../components/ui/CardTestimonio.astro";
-import Footer from "../components/ui/Footer.astro";
 import HeroSlider from "../components/HeroSlider";
 import AnimatedWrapper from "../components/AnimatedWrapper";
 ---
@@ -15,7 +14,7 @@ import AnimatedWrapper from "../components/AnimatedWrapper";
 
 	<section class="pt-16 max-w-[96rem] mx-auto px-8 2xl:px-0">
 		<AnimatedWrapper client:load>
-			<SectionTitle titulo="Nuestros servicios" />
+			<SectionTitle className="text-center" titulo="Nuestros servicios" />
 		</AnimatedWrapper>
 
 		<div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
@@ -59,7 +58,10 @@ import AnimatedWrapper from "../components/AnimatedWrapper";
 	</section>
 
 	<AnimatedWrapper client:load>
-		<SectionTitle titulo="Algo para todos los gustos" />
+		<SectionTitle
+			className="text-center"
+			titulo="Algo para todos los gustos"
+		/>
 	</AnimatedWrapper>
 	<AnimatedWrapper client:load>
 		<section class="lg:h-96 h-72 w-full flex">
@@ -94,7 +96,7 @@ import AnimatedWrapper from "../components/AnimatedWrapper";
 				</div>
 			</div>
 			<div
-				class="w-full h-full bg-[url('/mako54/mako-hero.webp')] bg-cover bg-center relative group"
+				class="w-full h-full bg-[url('/mako54/mako-02.jpg')] bg-cover bg-center relative group"
 			>
 				<div
 					class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity"
@@ -115,7 +117,7 @@ import AnimatedWrapper from "../components/AnimatedWrapper";
 		>
 			<SectionTitle
 				titulo="Clientes satisfechos"
-				className="text-white"
+				className="text-white text-center"
 			/>
 			<div class="grid grid-cols-1 xl:grid-cols-3 gap-8">
 				<CardTestimonio
