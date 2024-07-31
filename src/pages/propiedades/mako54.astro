@@ -35,10 +35,12 @@ const slides = [
 
 <MainLayout title="MAKO 54">
     <section class="bg-neutral-900">
-        <AnimatedWrapper client:load>
-            <div class="max-w-7xl mx-auto py-8">
-                <div class="flex gap-16">
-                    <div class="w-fit">
+        <div class="max-w-7xl mx-auto py-8">
+            <AnimatedWrapper client:load>
+                <div class="block px-8 xl:gap-16 xl:flex xl:px-0">
+                    <div
+                        class="flex flex-col items-center xl:block mb-5 xl:mb-0"
+                    >
                         <img
                             src="/obas-logo-white.svg"
                             alt="Obas logo"
@@ -46,8 +48,8 @@ const slides = [
                         />
                         <img
                             src="/mako54/logo-mako-color.svg"
-                            alt="Mako logo"
-                            class="w-[500px]"
+                            alt="Mako54 logo"
+                            class="w-72 lg:w-96 xl:w-[500px]"
                         />
                         <div class="mt-16 flex justify-end">
                             <a
@@ -74,15 +76,18 @@ const slides = [
                         </div>
                     </div>
                 </div>
-            </div>
-        </AnimatedWrapper>
+            </AnimatedWrapper>
+        </div>
     </section>
 
-    <AnimatedWrapper client:load>
-        <section class="max-w-7xl mx-auto my-16">
-            <div class="flex gap-8">
-                <div class="w-1/2">
-                    <SectionTitle titulo="Excelente ubicación" />
+    <!-- <AnimatedWrapper client:load> -->
+        <section class="max-w-7xl mx-auto my-16 px-8 xl:px-4">
+            <div class="block lg:flex gap-8">
+                <div class="w-full lg:w-1/2 mb-5 lg:mb-0">
+                    <SectionTitle
+                        titulo="Excelente ubicación"
+                        className="text-center sm:text-left"
+                    />
 
                     <p>
                         <span class="font-bold">MAKO 54</span>, A tan sólo unas
@@ -103,18 +108,25 @@ const slides = [
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
-                    class="rounded-lg w-1/2"
+                    class="rounded-lg w-full lg:w-1/2"
                 >
                 </iframe>
             </div>
         </section>
-    </AnimatedWrapper>
+    <!-- </AnimatedWrapper> -->
 
-    <AnimatedWrapper client:load>
-        <section class="max-w-7xl mx-auto mb-16 flex gap-5">
-            <div class="w-7/12">
-                <SectionTitle titulo="Servicios" />
-                <div class="mt-8 grid grid-cols-2 gap-x-16 gap-y-8 mb-8">
+    <!-- <AnimatedWrapper client:load> -->
+        <section
+            class="max-w-7xl mx-auto mb-16 block xl:flex gap-5 px-8 xl:px-4"
+        >
+            <div class="w-full xl:w-7/12">
+                <SectionTitle
+                    titulo="Servicios"
+                    className="text-center sm:text-left"
+                />
+                <div
+                    class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-x-16 gap-y-8 mb-8"
+                >
                     <div class="flex gap-5 items-center">
                         <div
                             class="border border-obas flex items-center p-4 rounded-full text-obas"
@@ -159,8 +171,11 @@ const slides = [
                 <a
                     href="https://hotels.cloudbeds.com/reservation/MPmmBg"
                     target="_blank"
-                    ><Button variant="obas" texto="RESERVAR AHORA" /></a
                 >
+                    <div class="flex justify-center xl:justify-start">
+                        <Button variant="obas" texto="RESERVAR AHORA" />
+                    </div>
+                </a>
             </div>
             <div class="w-5/12 flex gap-5">
                 <div
@@ -173,12 +188,12 @@ const slides = [
                 </div>
             </div>
         </section>
-    </AnimatedWrapper>
+    <!-- </AnimatedWrapper> -->
 
-    <AnimatedWrapper client:load>
-        <section class="max-w-7xl mx-auto mb-16 flex justify-between">
-            <div class="w-2/5 space-y-5">
-                <h2 class="font-bold font-serif uppercase text-neutral-950">
+    <!-- <AnimatedWrapper client:load> -->
+        <section class="max-w-7xl mx-auto mb-16 block xl:flex justify-between px-8 xl:px-4">
+            <div class="w-full xl:w-2/5 space-y-5">
+                <h2 class="font-bold font-serif uppercase text-neutral-950 text-center sm:text-left">
                     Magnífica vista
                 </h2>
                 <p>
@@ -195,10 +210,10 @@ const slides = [
                 </div>
             </div>
 
-            <div class="border border-neutral-950"></div>
+            <div class="border border-neutral-950 hidden xl:block"></div>
 
-            <div class="w-2/5 space-y-5">
-                <h2 class="font-bold font-serif uppercase text-neutral-950">
+            <div class="w-full xl:w-2/5 space-y-5 mt-5 xl:mt-0">
+                <h2 class="font-bold font-serif uppercase text-neutral-950 text-center sm:text-left">
                     Modernos interiores
                 </h2>
                 <p>Lofts modernos.</p>
@@ -212,10 +227,10 @@ const slides = [
                 </div>
             </div>
         </section>
-    </AnimatedWrapper>
+    <!-- </AnimatedWrapper> -->
 
-    <AnimatedWrapper client:load>
-        <section class="max-w-7xl mx-auto mb-16">
+    <!-- <AnimatedWrapper client:load> -->
+        <section class="max-w-7xl mx-auto mb-16 px-8 xl:px-4">
             <h2
                 class="font-bold font-serif uppercase text-center text-neutral-950"
             >
@@ -232,5 +247,5 @@ const slides = [
                 </div>
             </a>
         </section>
-    </AnimatedWrapper>
+    <!-- </AnimatedWrapper> -->
 </MainLayout>

@@ -21,7 +21,7 @@ const ImageModalSlider = ({ slides }: { slides: string[] }) => {
 
     return (
         <>
-            <div className="grid grid-cols-4 gap-5 my-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 sm:gap-5 mt-8 mb-5 sm:mb-0">
                 {slides.map((bgImage, index) => (
                     <div key={index}>
                         {index < 8 && (
@@ -37,7 +37,7 @@ const ImageModalSlider = ({ slides }: { slides: string[] }) => {
 
             {modalOpen && (
                 <div
-                    className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-20"
+                    className="fixed inset-0 bg-black bg-opacity-75 hidden lg:flex items-center justify-center z-20"
                     onClick={closeModal}
                 >
                     <div className="relative w-full max-w-4xl mx-auto" onClick={(e) => e.stopPropagation()}>
