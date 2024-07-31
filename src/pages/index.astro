@@ -1,4 +1,12 @@
 ---
+import {
+	FaWalking,
+	FaHands,
+	FaCoffee,
+	FaConciergeBell,
+	FaCamera,
+	FaBed,
+} from "react-icons/fa";
 import MainLayout from "../layouts/MainLayout.astro";
 import CardHome from "../components/ui/CardHome.astro";
 import SectionTitle from "../components/ui/SectionTitle.astro";
@@ -20,39 +28,57 @@ import AnimatedWrapper from "../components/AnimatedWrapper";
 		<div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
 			<AnimatedWrapper client:load>
 				<CardHome
+					num="01"
 					titulo="Cercanía"
 					texto={`Nuestras habitaciones están estratégicamente localizadas para que puedas disfrutar de tu estancia y las atracciones más importantes en tu destino.`}
-				/>
+				>
+					<FaWalking size={40} slot="icon" />
+				</CardHome>
 			</AnimatedWrapper>
 			<AnimatedWrapper client:load>
 				<CardHome
-					titulo="Cercanía"
-					texto={`Nuestras habitaciones están estratégicamente localizadas para que puedas disfrutar de tu estancia y las atracciones más importantes en tu destino.`}
-				/>
+					num="02"
+					titulo="Calidad premium"
+					texto={`Somos profesionales en el ramo de hospedaje. Ofrecemos transparencia y honestidad para que nuestros clientes queden satisfechos y regresen con nosotros.`}
+				>
+					<FaHands size={40} slot="icon" />
+				</CardHome>
 			</AnimatedWrapper>
 			<AnimatedWrapper client:load>
 				<CardHome
-					titulo="Cercanía"
-					texto={`Nuestras habitaciones están estratégicamente localizadas para que puedas disfrutar de tu estancia y las atracciones más importantes en tu destino.`}
-				/>
+					num="03"
+					titulo="Áreas de trabajo"
+					texto={`Si además de relajarte busca un espacio cómodo para trabajar, nuestras habitaciones cuentan con lo que necesitas para tener tu oficina remota en un lugar reconfortante.`}
+				>
+					<FaCoffee size={40} slot="icon" />
+				</CardHome>
 			</AnimatedWrapper>
 			<AnimatedWrapper client:load>
 				<CardHome
-					titulo="Cercanía"
+					num="04"
+					titulo="Reservación directa"
 					texto={`Nuestras habitaciones están estratégicamente localizadas para que puedas disfrutar de tu estancia y las atracciones más importantes en tu destino.`}
-				/>
+				>
+					<FaConciergeBell size={40} slot="icon" />
+				</CardHome>
 			</AnimatedWrapper>
 			<AnimatedWrapper client:load>
 				<CardHome
-					titulo="Cercanía"
-					texto={`Nuestras habitaciones están estratégicamente localizadas para que puedas disfrutar de tu estancia y las atracciones más importantes en tu destino.`}
-				/>
+					num="05"
+					titulo="Excelentes vistas"
+					texto="Disfruta de las mejores vistas de nuestras locaciones y espacios armoniosos que complementarán tu experiencia en todo momento."
+				>
+					<FaCamera size={40} slot="icon" />
+				</CardHome>
 			</AnimatedWrapper>
 			<AnimatedWrapper client:load>
 				<CardHome
-					titulo="Cercanía"
-					texto={`Nuestras habitaciones están estratégicamente localizadas para que puedas disfrutar de tu estancia y las atracciones más importantes en tu destino.`}
-				/>
+					num="06"
+					titulo="Comodidad"
+					texto={`Siéntete como en casa con todos los servicios incluídos, espacios de relajación, cocinas integrales, camas suaves y limpieza en cada área.`}
+				>
+					<FaBed size={40} slot="icon" />
+				</CardHome>
 			</AnimatedWrapper>
 		</div>
 	</section>

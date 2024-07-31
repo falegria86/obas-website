@@ -3,7 +3,7 @@ import { TbAirConditioning } from "react-icons/tb";
 import { MdPool } from "react-icons/md";
 import { FaParking } from "react-icons/fa";
 import { SiAdguard } from "react-icons/si";
-import { FaKitchenSet } from "react-icons/fa6"
+import { FaKitchenSet } from "react-icons/fa6";
 import Button from "../../components/ui/Button.astro";
 import SectionTitle from "../../components/ui/SectionTitle.astro";
 import MainLayout from "../../layouts/MainLayout.astro";
@@ -50,7 +50,11 @@ const slides = [
                             class="w-[500px]"
                         />
                         <div class="mt-16 flex justify-end">
-                            <Button texto="RESERVAR AHORA" />
+                            <a
+                                href="https://hotels.cloudbeds.com/reservation/MPmmBg"
+                                target="_blank"
+                                ><Button texto="RESERVAR AHORA" /></a
+                            >
                         </div>
                     </div>
                     <div class="w-full flex gap-x-5">
@@ -152,7 +156,11 @@ const slides = [
                         <h4 class="font-bold">Cocina integral</h4>
                     </div>
                 </div>
-                <Button variant="obas" texto="RESERVAR AHORA" />
+                <a
+                    href="https://hotels.cloudbeds.com/reservation/MPmmBg"
+                    target="_blank"
+                    ><Button variant="obas" texto="RESERVAR AHORA" /></a
+                >
             </div>
             <div class="w-5/12 flex gap-5">
                 <div
@@ -215,9 +223,14 @@ const slides = [
             </h2>
 
             <ImageModalSlider client:load slides={slides} />
-            <div class="flex justify-center">
-                <Button variant="obas" texto="Reservar ahora" />
-            </div>
+            <a
+                href="https://hotels.cloudbeds.com/reservation/MPmmBg"
+                target="_blank"
+            >
+                <div class="flex justify-center">
+                    <Button variant="obas" texto="Reservar ahora" />
+                </div>
+            </a>
         </section>
     </AnimatedWrapper>
 </MainLayout>

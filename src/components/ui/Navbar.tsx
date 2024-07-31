@@ -34,12 +34,16 @@ const Navbar = () => {
                         <div className="mt-4">
                             <h6 className="ml-4 text-gray-400">Propiedades</h6>
                             <div className="h-[1px] mt-1 mb-2 bg-gray-200"></div>
-                            <li className="text-gray-500 hover:text-neutral-950 cursor-pointer hover:bg-neutral-100 hover:font-semibold px-4 py-2">
-                                <a href="/propiedades/mako54">Mako 54</a>
-                            </li>
-                            <li className="text-gray-500 hover:text-neutral-950 cursor-pointer hover:bg-neutral-100 hover:font-semibold rounded-b-md px-4 py-2">
-                                <a href="/propiedades/revu519">Revu 519</a>
-                            </li>
+                            <a href="/propiedades/mako54">
+                                <li className="text-gray-500 hover:text-neutral-950 cursor-pointer hover:bg-neutral-100 hover:font-semibold px-4 py-2">
+                                    Mako 54
+                                </li>
+                            </a>
+                            <a href="/propiedades/revu519">
+                                <li className="text-gray-500 hover:text-neutral-950 cursor-pointer hover:bg-neutral-100 hover:font-semibold rounded-b-md px-4 py-2">
+                                    Revu 519
+                                </li>
+                            </a>
                         </div>
                     </ul>
                 )}

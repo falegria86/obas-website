@@ -1,12 +1,12 @@
 ---
 import { FaWalking } from "react-icons/fa";
-const { titulo, texto } = Astro.props;
+const { titulo, texto, num } = Astro.props;
 ---
 
 <div class="border-t-2 border-neutral-950">
-    <h3 class="mt-8 mb-5 font-bold text-neutral-950">01</h3>
+    <h3 class="mt-8 mb-5 font-bold text-neutral-950">{num}</h3>
     <div class="flex items-center gap-5 text-blue-800">
-        <FaWalking size={48} />
+        <slot name="icon" />
         <h2>{titulo}</h2>
     </div>
 
