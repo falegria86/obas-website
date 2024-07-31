@@ -1,6 +1,6 @@
 ---
 import { FaStar } from "react-icons/fa";
-const { texto, fecha, nombre } = Astro.props;
+const { texto, fecha, nombre, imgUrl } = Astro.props;
 ---
 
 <div class="bg-black/50 border border-white rounded-md p-7 w-full">
@@ -9,7 +9,11 @@ const { texto, fecha, nombre } = Astro.props;
     </p>
     <div class="mt-16 block sm:flex items-center justify-between">
         <div class="flex gap-5 items-center">
-            <div class="w-20 h-20 rounded-full bg-white"></div>
+            <div
+                class={`w-20 h-20 rounded-full bg-cover bg-center`}
+                style={{ backgroundImage: `url(${imgUrl})` }}
+            >
+            </div>
             <div>
                 <p class="font-serif font-bold text-white">{nombre}</p>
                 <p class="text-gray-400 text-xs">{fecha}</p>

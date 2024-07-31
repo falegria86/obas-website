@@ -41,11 +41,13 @@ const slides = [
                     <div
                         class="flex flex-col items-center xl:block mb-5 xl:mb-0"
                     >
-                        <img
-                            src="/obas-logo-white.svg"
-                            alt="Obas logo"
-                            class="w-20 mb-16"
-                        />
+                        <a href="/">
+                            <img
+                                src="/obas-logo-white.svg"
+                                alt="Obas logo"
+                                class="w-20 mb-16"
+                            />
+                        </a>
 
                         <img
                             src="/revu519/logo-revu-green.svg"
@@ -191,66 +193,68 @@ const slides = [
     <!-- </AnimatedWrapper> -->
 
     <!-- <AnimatedWrapper client:load> -->
-        <section
-            class="max-w-7xl mx-auto mb-16 block xl:flex justify-between px-8 xl:px-4"
-        >
-            <div class="w-full xl:w-2/5 space-y-5">
-                <h2 class="font-bold font-serif uppercase text-neutral-950 text-center sm:text-left">
-                    Increíbles vistas
-                </h2>
-                <p>
-                    Disfruta de la increíble vista que ofrecen nuestros
-                    departamentos con balcón.
-                </p>
-                <div
-                    class="aspect-video bg-[url('/revu519/revu-15.jpg')] bg-cover bg-center w-full rounded-lg"
-                >
-                </div>
-                <div
-                    class="aspect-video bg-[url('/revu519/revu-03.jpg')] bg-cover bg-center w-full rounded-lg"
-                >
-                </div>
+    <section
+        class="max-w-7xl mx-auto mb-16 block xl:flex justify-between px-8 xl:px-4"
+    >
+        <div class="w-full xl:w-2/5 space-y-5">
+            <h2
+                class="font-bold font-serif uppercase text-neutral-950 text-center sm:text-left"
+            >
+                Increíbles vistas
+            </h2>
+            <p>
+                Disfruta de la increíble vista que ofrecen nuestros
+                departamentos con balcón.
+            </p>
+            <div
+                class="aspect-video bg-[url('/revu519/revu-15.jpg')] bg-cover bg-center w-full rounded-lg"
+            >
             </div>
-
-            <div class="border border-neutral-950 hidden xl:block"></div>
-
-            <div class="w-full xl:w-2/5 space-y-5 mt-5 xl:mt-0">
-                <h2 class="font-bold font-serif uppercase text-neutral-950 text-center sm:text-left">
-                    Modernos interiores
-                </h2>
-                <p>
-                    Lofts modernos, acondicionados y muy acogedores, ideales
-                    hasta para 2 personas.
-                </p>
-                <div
-                    class="aspect-video bg-[url('/revu519/revu-12.jpg')] bg-cover bg-center w-full rounded-lg"
-                >
-                </div>
-                <div
-                    class="aspect-video bg-[url('/revu519/revu-06.jpg')] bg-cover bg-center w-full rounded-lg"
-                >
-                </div>
+            <div
+                class="aspect-video bg-[url('/revu519/revu-03.jpg')] bg-cover bg-center w-full rounded-lg"
+            >
             </div>
-        </section>
+        </div>
+
+        <div class="border border-neutral-950 hidden xl:block"></div>
+
+        <div class="w-full xl:w-2/5 space-y-5 mt-5 xl:mt-0">
+            <h2
+                class="font-bold font-serif uppercase text-neutral-950 text-center sm:text-left"
+            >
+                Modernos interiores
+            </h2>
+            <p>
+                Lofts modernos, acondicionados y muy acogedores, ideales hasta
+                para 2 personas.
+            </p>
+            <div
+                class="aspect-video bg-[url('/revu519/revu-12.jpg')] bg-cover bg-center w-full rounded-lg"
+            >
+            </div>
+            <div
+                class="aspect-video bg-[url('/revu519/revu-06.jpg')] bg-cover bg-center w-full rounded-lg"
+            >
+            </div>
+        </div>
+    </section>
     <!-- </AnimatedWrapper> -->
 
     <!-- <AnimatedWrapper client:load> -->
-        <section class="max-w-7xl mx-auto mb-16 px-8 xl:px-4">
-            <h2
-                class="font-bold font-serif uppercase text-center text-neutral-950"
-            >
-                Una imagen dice más que mil palabras
-            </h2>
+    <section class="max-w-7xl mx-auto mb-16 px-8 xl:px-4">
+        <h2 class="font-bold font-serif uppercase text-center text-neutral-950">
+            Una imagen dice más que mil palabras
+        </h2>
 
-            <ImageModalSlider client:load slides={slides} />
-            <a
-                href="https://hotels.cloudbeds.com/reservation/WEu6yV"
-                target="_blank"
-            >
-                <div class="flex justify-center">
-                    <Button variant="obas" texto="Reservar ahora" />
-                </div>
-            </a>
-        </section>
+        <ImageModalSlider client:load slides={slides} />
+        <a
+            href="https://hotels.cloudbeds.com/reservation/WEu6yV"
+            target="_blank"
+        >
+            <div class="flex justify-center">
+                <Button variant="obas" texto="Reservar ahora" />
+            </div>
+        </a>
+    </section>
     <!-- </AnimatedWrapper> -->
 </MainLayout>
