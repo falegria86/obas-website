@@ -6,6 +6,7 @@ import {
 	FaConciergeBell,
 	FaCamera,
 	FaBed,
+	FaWhatsapp,
 } from "react-icons/fa";
 import MainLayout from "../layouts/MainLayout.astro";
 import CardHome from "../components/ui/CardHome.astro";
@@ -16,6 +17,19 @@ import AnimatedWrapper from "../components/AnimatedWrapper";
 ---
 
 <MainLayout>
+	<a
+		href="https://api.whatsapp.com/send/?phone=523221184312&text=Me%20puedes%20proporcionar%20m%C3%A1s%20informaci%C3%B3n%20de%20las%20propiedades%20por%20favor"
+		target="_blank"
+	>
+		<div
+			class="bg-green-600 rounded-full px-3 py-3 sm:py-4 sm:px-8 text-white fixed bottom-5 right-5 z-50 flex items-center"
+		>
+			<FaWhatsapp className="w-6 h-6 mr-0 sm:mr-2" />
+
+			<span class="hidden sm:block">Contáctanos</span>
+		</div>
+	</a>
+
 	<main class="bg-neutral-900 w-full max-h-screen h-full p-4 flex gap-16">
 		<HeroSlider client:load />
 	</main>

@@ -44,6 +44,11 @@ const Navbar = () => {
                                     Revu 519
                                 </li>
                             </a>
+                            <a href="/propiedades/mako-tepic">
+                                <li className="text-gray-500 hover:text-neutral-950 cursor-pointer hover:bg-neutral-100 hover:font-semibold rounded-b-md px-4 py-2">
+                                    Mako Tepic
+                                </li>
+                            </a>
                         </div>
                     </ul>
                 )}

@@ -1,5 +1,8 @@
 ---
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa6";
+import { IoMdMail } from "react-icons/io";
+import { GrLocation } from "react-icons/gr";
 import Button from "./Button.astro";
 ---
 
@@ -30,6 +33,41 @@ import Button from "./Button.astro";
             <a href="/quienes-somos">
                 <h5 class="text-white">Visión</h5>
             </a>
+        </div>
+        <div>
+            <h5 class="text-gray-400 uppercase font-normal mb-5">
+                Contáctanos
+            </h5>
+            <div class="flex items-center mb-5">
+                <GrLocation className="text-white mr-2" size={20} />
+                <h5 class="text-white">Girasol 239, Tepic, Nayarit</h5>
+            </div>
+            <div class="flex items-center mb-5">
+                <IoMdMail className="text-white mr-2" size={20} />
+                <a href="mailto:reservaciones.obas@macopron.com">
+                    <h5 class="text-white">reservaciones.obas@macopron.com</h5>
+                </a>
+            </div>
+            <div class="flex items-center mb-5">
+                <FaWhatsapp className="text-white mr-2" size={20} />
+                <FaPhone className="text-white mr-2" size={20} />
+                <a
+                    href="https://api.whatsapp.com/send/?phone=523221184312&text=Me%20puedes%20proporcionar%20m%C3%A1s%20informaci%C3%B3n%20de%20las%20propiedades%20por%20favor"
+                    target="_blank"
+                >
+                    <h5 class="text-white">+(52) 322 118 4312</h5>
+                </a>
+            </div>
+
+            <div class="flex items-center mb-5">
+                <FaWhatsapp className="text-white mr-2" size={20} />
+                <FaPhone className="text-white mr-2" size={20} />
+                <a
+                    href="https://api.whatsapp.com/send/?phone=523112260098&text=Me%20puedes%20proporcionar%20m%C3%A1s%20informaci%C3%B3n%20de%20las%20propiedades%20por%20favor"
+                >
+                    <h5 class="text-white">+(52) 311 226 0098</h5>
+                </a>
+            </div>
         </div>
         <div class="mx-auto md:mx-0">
             <h5 class="text-gray-400 uppercase font-normal mb-5">

@@ -1,9 +1,9 @@
 ---
 import { TbAirConditioning } from "react-icons/tb";
-import { MdPool } from "react-icons/md";
 import { FaParking, FaWhatsapp } from "react-icons/fa";
-import { SiAdguard } from "react-icons/si";
 import { FaKitchenSet } from "react-icons/fa6";
+import { PiTelevisionSimpleFill } from "react-icons/pi";
+import { FaWifi } from "react-icons/fa";
 import Button from "../../components/ui/Button.astro";
 import SectionTitle from "../../components/ui/SectionTitle.astro";
 import MainLayout from "../../layouts/MainLayout.astro";
@@ -11,31 +11,31 @@ import ImageModalSlider from "../../components/ImageModalSlider";
 import AnimatedWrapper from "../../components/AnimatedWrapper";
 
 const slides = [
-    "/mako54/mako-01.jpg",
-    "/mako54/mako-02.jpg",
-    "/mako54/mako-03.jpg",
-    "/mako54/mako-04.jpg",
-    "/mako54/mako-05.jpg",
-    "/mako54/mako-06.jpg",
-    "/mako54/mako-07.jpg",
-    "/mako54/mako-08.jpg",
-    "/mako54/mako-09.jpg",
-    "/mako54/mako-10.jpg",
-    "/mako54/mako-11.jpg",
-    "/mako54/mako-12.jpg",
-    "/mako54/mako-13.jpg",
-    "/mako54/mako-14.jpg",
-    "/mako54/mako-15.jpg",
-    "/mako54/mako-16.jpg",
-    "/mako54/mako-17.jpg",
-    "/mako54/mako-18.jpg",
-    "/mako54/mako-19.jpg",
+    "/mako-tepic/tepic-01.jpg",
+    "/mako-tepic/tepic-02.jpg",
+    "/mako-tepic/tepic-03.jpg",
+    "/mako-tepic/tepic-04.jpg",
+    "/mako-tepic/tepic-05.jpg",
+    "/mako-tepic/tepic-06.jpg",
+    "/mako-tepic/tepic-07.jpg",
+    "/mako-tepic/tepic-08.jpg",
+    "/mako-tepic/tepic-09.jpg",
+    "/mako-tepic/tepic-10.jpg",
+    "/mako-tepic/tepic-11.jpg",
+    "/mako-tepic/tepic-12.jpg",
+    "/mako-tepic/tepic-13.jpg",
+    "/mako-tepic/tepic-14.jpg",
+    "/mako-tepic/tepic-15.jpg",
+    "/mako-tepic/tepic-16.jpg",
+    "/mako-tepic/tepic-17.jpg",
+    "/mako-tepic/tepic-18.jpg",
+    "/mako-tepic/tepic-19.jpg",
 ];
 ---
 
-<MainLayout title="MAKO 54">
+<MainLayout title="Mako Tepic">
     <a
-        href="https://api.whatsapp.com/send/?phone=523221184312&text=Me%20podr%C3%A1s%20proporcionar%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20propiedad%20MAKO%2054"
+        href="https://api.whatsapp.com/send/?phone=523221184312&text=Me%20podr%C3%A1s%20proporcionar%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20propiedad%20MAKO%20TEPIC"
         target="_blank"
     >
     <div
@@ -49,7 +49,7 @@ const slides = [
     <section class="bg-neutral-900">
         <div class="max-w-7xl mx-auto py-8">
             <AnimatedWrapper client:load>
-                <div class="block px-8 xl:gap-16 xl:flex xl:px-0">
+                <div class="block px-8 xl:gap-16 xl:flex xl:px-4">
                     <div
                         class="flex flex-col items-center xl:block mb-5 xl:mb-0"
                     >
@@ -60,31 +60,34 @@ const slides = [
                                 class="w-20 mb-16"
                             />
                         </a>
+
                         <img
-                            src="/mako54/logo-mako-color.svg"
-                            alt="Mako54 logo"
+                            src="/mako-tepic/logo-mako-tepic.svg"
+                            alt="Mako Tepic logo"
                             class="w-72 lg:w-96 xl:w-[500px]"
                         />
-                        <div class="mt-16 flex justify-end">
-                            <a
-                                href="https://hotels.cloudbeds.com/reservation/MPmmBg"
-                                target="_blank"
-                                ><Button texto="RESERVAR AHORA" /></a
-                            >
-                        </div>
+
+                        <a
+                            href="https://hotels.cloudbeds.com/reservation/WEu6yV"
+                            target="_blank"
+                        >
+                            <div class="mt-16 flex justify-end">
+                                <Button texto="RESERVAR AHORA" />
+                            </div>
+                        </a>
                     </div>
                     <div class="w-full flex gap-x-5">
                         <div
-                            class="aspect-auto bg-[url('/mako54/mako-10.jpg')] bg-cover bg-center w-1/2 rounded-lg"
+                            class="aspect-auto bg-[url('/mako-tepic/tepic-17.jpg')] bg-cover bg-center w-1/2 rounded-lg"
                         >
                         </div>
                         <div class="w-1/2 flex flex-col justify-between">
                             <div
-                                class="aspect-video bg-[url('/mako54/mako-04.jpg')] bg-cover bg-center rounded-lg mb-5"
+                                class="aspect-video bg-[url('/mako-tepic/tepic-04.jpg')] bg-cover bg-center rounded-lg mb-5"
                             >
                             </div>
                             <div
-                                class="aspect-video bg-[url('/mako54/mako-08.jpg')] bg-cover bg-center rounded-lg"
+                                class="aspect-video bg-[url('/mako-tepic/tepic-08.jpg')] bg-cover bg-center rounded-lg"
                             >
                             </div>
                         </div>
@@ -99,24 +102,23 @@ const slides = [
         <div class="block lg:flex gap-8">
             <div class="w-full lg:w-1/2 mb-5 lg:mb-0">
                 <SectionTitle
-                    titulo="Excelente ubicación"
+                    titulo="Hermosa propiedad"
                     className="text-center sm:text-left"
                 />
 
                 <p>
-                    <span class="font-bold">MAKO 54</span>, A tan sólo unas
-                    cuantas cuadras de la playa se encuentra Mako 54, rodeado de
-                    atractivas propuestas y ubicado en la icónica colonia 5 de
-                    Diciembre, en Puerto Vallarta
+                    <span class="font-bold">MAKO Tepic</span>, Ubicado en Calle
+                    Revolución Social #519, en la colonia Menchaca de Tepic,
+                    Nayarit, se encuentra este inmueble tipo loft equipado con
+                    cocina integral y baño completo.
                     <br /><br />
-                    Al contrar con 4 suits para 2 personas y 2 suits dobles, para
-                    4 personas cada una, la tranquilidad forma parte esencial de
-                    Mako 54.
+                    Cuenta con 9 departamentos para 2 personas y 1 departamento equipado
+                    para hasta 5 personas.
                 </p>
             </div>
 
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.1595180760137!2d-105.22852778769341!3d20.62235378084759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842145e5bf332f0d%3A0x145b84a6b8b1f52a!2sMako%2054%20-%20Apartments%20for%20rent!5e0!3m2!1ses!2smx!4v1722394198083!5m2!1ses!2smx"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.769817828961!2d-104.85860988767848!3d21.477546580204258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84273759ae905585%3A0xa23dd682a2bae636!2sMako%20Tepic!5e0!3m2!1ses!2smx!4v1722646336203!5m2!1ses!2smx"
                 height="350"
                 style="border:0;"
                 allowfullscreen=""
@@ -143,9 +145,9 @@ const slides = [
                     <div
                         class="border border-obas flex items-center p-4 rounded-full text-obas"
                     >
-                        <MdPool size={28} />
+                        <TbAirConditioning size={28} />
                     </div>
-                    <h4 class="font-bold">Rooftop con alberca</h4>
+                    <h4 class="font-bold">Aire acondicionado</h4>
                 </div>
                 <div class="flex gap-5 items-center">
                     <div
@@ -153,23 +155,15 @@ const slides = [
                     >
                         <FaParking size={28} />
                     </div>
-                    <h4 class="font-bold">Estacionamiento techado</h4>
+                    <h4 class="font-bold">Estacionamiento</h4>
                 </div>
                 <div class="flex gap-5 items-center">
                     <div
                         class="border border-obas flex items-center p-4 rounded-full text-obas"
                     >
-                        <SiAdguard size={28} />
+                        <FaWifi size={28} />
                     </div>
-                    <h4 class="font-bold">Seguridad privada</h4>
-                </div>
-                <div class="flex gap-5 items-center">
-                    <div
-                        class="border border-obas flex items-center p-4 rounded-full text-obas"
-                    >
-                        <TbAirConditioning size={28} />
-                    </div>
-                    <h4 class="font-bold">Aire acondicionado</h4>
+                    <h4 class="font-bold">Wi-fi</h4>
                 </div>
                 <div class="flex gap-5 items-center">
                     <div
@@ -179,9 +173,17 @@ const slides = [
                     </div>
                     <h4 class="font-bold">Cocina integral</h4>
                 </div>
+                <div class="flex gap-5 items-center">
+                    <div
+                        class="border border-obas flex items-center p-4 rounded-full text-obas"
+                    >
+                        <PiTelevisionSimpleFill size={28} />
+                    </div>
+                    <h4 class="font-bold">Televisión</h4>
+                </div>
             </div>
             <a
-                href="https://hotels.cloudbeds.com/reservation/MPmmBg"
+                href="https://hotels.cloudbeds.com/reservation/WEu6yV"
                 target="_blank"
             >
                 <div class="flex justify-center xl:justify-start">
@@ -189,13 +191,13 @@ const slides = [
                 </div>
             </a>
         </div>
-        <div class="w-5/12 flex gap-5">
+        <div class="hidden xl:w-5/12 xl:flex gap-5">
             <div
-                class="aspect-auto bg-[url('/mako54/mako-14.jpg')] bg-cover bg-center w-full rounded-lg"
+                class="aspect-auto bg-[url('/mako-tepic/tepic-14.jpg')] bg-cover bg-center w-full rounded-lg"
             >
             </div>
             <div
-                class="aspect-auto bg-[url('/mako54/mako-18.jpg')] bg-cover bg-center w-full rounded-lg"
+                class="aspect-auto bg-[url('/mako-tepic/tepic-18.jpg')] bg-cover bg-center w-full rounded-lg"
             >
             </div>
         </div>
@@ -210,18 +212,18 @@ const slides = [
             <h2
                 class="font-bold font-serif uppercase text-neutral-950 text-center sm:text-left"
             >
-                Magnífica vista
+                Increíbles vistas
             </h2>
             <p>
-                Disfruta de la magnífica vista del rooftop, acondicionado con
-                alberca y camastros.
+                Disfruta de la increíble vista que ofrecen nuestros
+                departamentos con balcón.
             </p>
             <div
-                class="aspect-video bg-[url('/mako54/mako-07.jpg')] bg-cover bg-center w-full rounded-lg"
+                class="aspect-video bg-[url('/mako-tepic/tepic-15.jpg')] bg-cover bg-center w-full rounded-lg"
             >
             </div>
             <div
-                class="aspect-video bg-[url('/mako54/mako-08.jpg')] bg-cover bg-center w-full rounded-lg"
+                class="aspect-video bg-[url('/mako-tepic/tepic-03.jpg')] bg-cover bg-center w-full rounded-lg"
             >
             </div>
         </div>
@@ -234,13 +236,16 @@ const slides = [
             >
                 Modernos interiores
             </h2>
-            <p>Lofts modernos.</p>
+            <p>
+                Lofts modernos, acondicionados y muy acogedores, ideales hasta
+                para 2 personas.
+            </p>
             <div
-                class="aspect-video bg-[url('/mako54/mako-12.jpg')] bg-cover bg-center w-full rounded-lg"
+                class="aspect-video bg-[url('/mako-tepic/tepic-12.jpg')] bg-cover bg-center w-full rounded-lg"
             >
             </div>
             <div
-                class="aspect-video bg-[url('/mako54/mako-11.jpg')] bg-cover bg-center w-full rounded-lg"
+                class="aspect-video bg-[url('/mako-tepic/tepic-06.jpg')] bg-cover bg-center w-full rounded-lg"
             >
             </div>
         </div>
@@ -255,7 +260,7 @@ const slides = [
 
         <ImageModalSlider client:load slides={slides} />
         <a
-            href="https://hotels.cloudbeds.com/reservation/MPmmBg"
+            href="https://hotels.cloudbeds.com/reservation/WEu6yV"
             target="_blank"
         >
             <div class="flex justify-center">

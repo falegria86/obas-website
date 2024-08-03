@@ -1,6 +1,6 @@
 ---
 import { TbAirConditioning } from "react-icons/tb";
-import { FaParking } from "react-icons/fa";
+import { FaParking, FaWhatsapp } from "react-icons/fa";
 import { FaKitchenSet } from "react-icons/fa6";
 import { PiTelevisionSimpleFill } from "react-icons/pi";
 import { FaWifi } from "react-icons/fa";
@@ -34,6 +34,18 @@ const slides = [
 ---
 
 <MainLayout title="REVU 519">
+    <a
+        href="https://api.whatsapp.com/send/?phone=523221184312&text=Me%20podr%C3%A1s%20proporcionar%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20propiedad%20REVU%20519"
+        target="_blank"
+    >
+        <div
+            class="bg-green-600 rounded-full px-3 py-3 sm:py-4 sm:px-8 text-white fixed bottom-5 right-5 z-50 flex items-center"
+        >
+            <FaWhatsapp className="w-6 h-6 mr-2" />
+
+            <span class="hidden sm:block">Contáctanos</span>
+        </div>
+    </a>
     <section class="bg-neutral-900">
         <div class="max-w-7xl mx-auto py-8">
             <AnimatedWrapper client:load>
