@@ -12,19 +12,19 @@ const HeroSlider = () => {
 
     const slides = [
         {
-            bgImage: '/mako54/mako-02.jpg',
+            bgImage: '/src/imgs/mako-54-hero.webp',
             logo: '/obas-logo-white.svg',
             mainLogo: '/mako54/mako-logo-white.svg',
             description: 'El lugar ideal para pasar tus días de descanso en relajación y comodidad total. Disfruta de la mejor vista en Puerto Vallarta.',
-            innerBgImage: '/mako54/mako-04.jpg',
+            innerBgImage: '/src/imgs/mako-54-hero-02.webp',
             url: '/propiedades/mako54'
         },
         {
-            bgImage: '/revu519/revu-03.jpg',
+            bgImage: '/src/imgs/revu-hero.webp',
             logo: '/obas-logo-white.svg',
             mainLogo: '/revu519/revu-logo-white.svg',
             description: 'Departamentos tipo loft amueblados y equipados para tus necesidades. Con una excelente ubicación en la ciudad de Tepic, Nayarit.',
-            innerBgImage: '/revu519/revu-15.jpg',
+            innerBgImage: '/src/imgs/revu-hero-02.webp',
             url: '/propiedades/revu519'
         }
     ];
@@ -34,7 +34,7 @@ const HeroSlider = () => {
             <Swiper
                 slidesPerView={1}
                 navigation={{ nextEl: ".arrow-left", prevEl: ".arrow-right" }}
-                autoplay={{ delay: 5000 }}
+                autoplay={{ delay: 25000 }}
                 loop={true}
                 modules={[Navigation, Autoplay]}
                 onSlideChange={(swiper) => setActiveSlide(swiper.activeIndex)}
@@ -80,24 +80,25 @@ const HeroSlider = () => {
                                             </button>
                                         </a>
                                     </motion.div>
-                                    <motion.div
+                                    <motion.img
                                         key={`${activeSlide}-innerBgImage`}
-                                        className="xl:block hidden w-1/3 h-96 rounded-3xl bg-center bg-cover"
-                                        style={{ backgroundImage: `url(${slide.innerBgImage})` }}
+                                        className="hidden xl:block w-1/3 rounded-3xl"
+                                        src={slide.innerBgImage}
                                         initial={{ opacity: 0, y: 20 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ duration: 1, delay: 1.5 }}
-                                    ></motion.div>
+                                    />
                                 </div>
                             </div>
-                            <motion.div
+                            <motion.img
                                 key={`${activeSlide}-bgImage`}
-                                className="w-full h-96 xl:h-full xl:w-1/2 rounded-3xl bg-center bg-cover"
-                                style={{ backgroundImage: `url(${slide.bgImage})` }}
+                                src={slide.bgImage}
+                                alt="hero-img"
+                                className="rounded-3xl w-full xl:w-1/2 object-cover h-auto"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 1 }}
-                            ></motion.div>
+                            />
                         </div>
                     </SwiperSlide>
                 ))}
